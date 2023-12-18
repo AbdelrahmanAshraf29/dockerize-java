@@ -1,8 +1,8 @@
-Version: '3.8'
+version: '3.8'
 services:
   vprodb:
     build:
-      context: ./Docker-file/db
+      context: ./Docker-files/db
     image: arsalanzeb/vprodb
     container_name: vprodb
     ports:
@@ -21,13 +21,13 @@ services:
     image: rabbitmq
     ports:
       - "15672:15672"
-    enviroment:
+    environment:
       - RABBITMQ_DEFAULT_USER=guest
       - RABBITMQ_DEFAULT_PASS=guest
 
   vproapp:
     build:
-      context: ./Docker-file/app
+      context: ./Docker-files/app
     image: arsalanzeb/vproapp
     container_name: vproapp
     ports:
@@ -37,7 +37,7 @@ services:
 
   vproweb:
     build:
-      context: ./Docker-file/web
+      context: ./Docker-files/web
     image: arsalanzeb/vproweb
     container_name: vproweb
     ports:
