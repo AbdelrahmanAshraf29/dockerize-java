@@ -1,6 +1,6 @@
 FROM mysql:8.0.33
 LABEL "project"="JAVA_WEB_APP"
-LABEL "Author"= "ARSALAN_ZEB"
+LABEL "Author"= "Arsalan"
 
 ENV MYSQL_ROOT_PASSWORD="vprodbpass"
 ENV MYSQL_DATABASE="accounts"
