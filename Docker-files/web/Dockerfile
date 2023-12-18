@@ -1,4 +1,4 @@
-FROM nginx
+FROM nginx:latest
 LABEL "Project"="JAVA_WEB_APP"
 LABEL "Author"="Arsalan"
 
