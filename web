@@ -1,0 +1,6 @@
+#Dockerfile for Setting up Nginx load balancer is configured to distribute traffic among multiple instances of the Java application
+
+FROM nginx:latest
+LABEL “Project”=”JAVA_WEB_APP”
+Run rm -rf /etc/nginx/conf.d/default.conf
+COPY nginvproapp.conf /etc/nginx/conf.d/vproapp.conf
