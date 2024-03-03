@@ -21,5 +21,8 @@ Then look for the file :
 - /src/main/resources/accountsdb
 - accountsdb.sql file is a mysql dump file.we have to import this dump to mysql db server
 - > mysql -u <user_name> -p accounts < accountsdb.sql
-
+### Using RabbitMQ
+- acts as an intermediary for messaging between applications, enabling asynchronous communication and decoupling of components.
+### Using Memcached
+- stores data in memory and retrieves it quickly in response to client requests.
 
